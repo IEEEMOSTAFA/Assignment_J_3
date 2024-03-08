@@ -10,7 +10,7 @@ function checkName(name)
         return "invalid";
     }
 
-    // name = name.trim();
+    
     let lastChar = name.charAt(name.length - 1);
 
     if(lastChar === 'a' || lastChar === 'A' || lastChar === 'e' || lastChar === 'E' || lastChar === 'i' || lastChar === 'I' || lastChar === 'o' || lastChar === 'O' || lastChar === 'u' || lastChar === 'U' || lastChar === 'y' || lastChar === 'Y' || lastChar === 'w' || lastChar === 'W' ){
