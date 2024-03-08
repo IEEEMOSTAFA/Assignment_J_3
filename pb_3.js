@@ -1,12 +1,12 @@
-function deleteInvalids(arr) {
+function deleteInvalids(array) {
 
-    if (!Array.isArray(arr)) {
+    if (!Array.isArray(array)) {
         return "Invalid Array";
     }  
 
     const result = [];
-    for (let i = 0; i < arr.length; i++) {
-        const item = arr[i];
+    for (let i = 0; i < array.length; i++) {
+        const item = array[i];
         if (typeof item === 'number' && !isNaN(item)) {
             result.push(item);
         }

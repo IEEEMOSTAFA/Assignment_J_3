@@ -17,7 +17,7 @@ function monthlySavings(arr,livingCost){
     let total_tax = 0 ;
     for(const payment of arr){
         if( payment >= 3000){
-            total_tax += payment * 0.2 
+            total_tax += payment * 0.2 ;
         }
     }
     let saving = sum - (total_tax + livingCost);
@@ -32,7 +32,7 @@ function monthlySavings(arr,livingCost){
 
 }
 
-const payment = 100;
-const cost = [ 900 , 2700 , 3400];
+const payment = [ 1000 , 2000 , 2500 ];
+const cost = 5000;
 const saving = monthlySavings(payment,cost);
 console.log(saving);

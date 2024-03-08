@@ -1,11 +1,11 @@
-function calculateMoney(n) {
+function calculateMoney(ticketSale) {
     let total_cost ;
 
-    if(n < 0){
+    if(ticketSale < 0){
         console.log("Invalid Number");
     }
     else{
-        total_cost = (n*120) - (500 + (8*50));
+        total_cost = (ticketSale*120) - (500 + (8*50));
               
     }
     return total_cost;
@@ -13,5 +13,5 @@ function calculateMoney(n) {
     
     }
 
-    const result = calculateMoney(-130);
+    const result = calculateMoney(10);
     console.log(result);
